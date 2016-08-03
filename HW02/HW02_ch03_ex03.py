@@ -50,26 +50,26 @@ def do_four(f):
 def main_line():
 	print('+ - - - - ')
 
-def side():
+def side_line():
 	print('|        ')
 
 def main_lines():
 	do_twice(main_line)
 	print('+')
 
-def sides():
-	do_twice(side)
+def side_lines():
+	do_twice(side_line)
 	print('|')
 
-def row():
+def print_row():
 	main_lines()
-	do_four(sides）
+	do_four(side_line）
 
 def print_grid():
-	do_twice(row)
+	do_twice(print_row)
 	main_lines()
 
-
+print_grid()
 
 
 

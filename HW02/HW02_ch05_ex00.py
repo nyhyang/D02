@@ -9,8 +9,13 @@
 # Body
 def do_n(function, n):
 	if n <= 0:
-		print ('Done')
+		return
+	else:
+		function()
 	do_n(function, n-1)
+
+
+
 
 
 
