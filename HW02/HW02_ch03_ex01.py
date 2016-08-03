@@ -15,7 +15,10 @@
 # Write your function below:
 # Body
 
+def right_justify(s):
+	print(' '*69 + 's')
 
+right_justify
 
 
 
