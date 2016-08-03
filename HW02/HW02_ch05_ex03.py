@@ -23,6 +23,22 @@
 # Write your functions below:
 # Body
 
+def is_triangle(a, b, c):
+    first_number = input("please enter a number for a: ")
+    a = int(first_number)
+    second_number = input("please enter a number for b: ")
+    b = int(second_number)
+    third_number = input("please enter a number for c: ")
+    c = int(third_number)
+    
+    if(a + b > c) or (a + c > b) or (b + c > a):
+        print('Yes')
+
+    elif(a + b == c) or (a + c == b) or (b + c == a):
+        print('degenerate triangle')
+
+    else: 
+        print('No')
 
 
 
@@ -46,7 +62,7 @@ def main():
     """
     print("Hello World!")
 
-
+is_triangle(1, 2, 3)
 
 if __name__ == "__main__":
     main()
