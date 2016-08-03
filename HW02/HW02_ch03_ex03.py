@@ -48,10 +48,10 @@ def do_four(f):
 	do_twice(f)
 
 def main_line():
-	print('+ - - - - ')
+	print('+ - - - -', end=' ')
 
 def side_line():
-	print('|        ')
+	print('|        ', end=' ')
 
 def main_lines():
 	do_twice(main_line)
@@ -63,13 +63,13 @@ def side_lines():
 
 def print_row():
 	main_lines()
-	do_four(side_line）
+	do_four (side_lines)
 
 def print_grid():
 	do_twice(print_row)
 	main_lines()
 
-print_grid()
+
 
 
 
@@ -94,8 +94,7 @@ def main():
     four_by_four()
     """
     print("Hello World!")
-    
-print_grid()
+    print_grid()   
 
 
 
