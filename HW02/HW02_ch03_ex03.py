@@ -39,6 +39,40 @@
 ################################################################################
 # Write your functions below:
 # Body
+def do_twice(f):
+	f()
+	f()
+
+def do_four(f):
+	do_twice(f)
+	do_twice(f)
+
+def main_line():
+	print('+ - - - - ')
+
+def side():
+	print('|        ')
+
+def main_lines():
+	do_twice(main_line)
+	print('+')
+
+def sides():
+	do_twice(side)
+	print('|')
+
+def row():
+	main_lines()
+	do_four(sides）
+
+def print_grid():
+	do_twice(row)
+	main_lines()
+
+
+
+
+
 
 
 
@@ -61,6 +95,7 @@ def main():
     """
     print("Hello World!")
     
+print_grid()
 
 
 

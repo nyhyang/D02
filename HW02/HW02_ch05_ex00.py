@@ -7,6 +7,12 @@
 ################################################################################
 # Write your functions below:
 # Body
+def do_n(function, n):
+	if n <= 0:
+		print ('Done')
+	do_n(function, n-1)
+
+
 
 
 
@@ -27,7 +33,7 @@ def main():
     """
     print_hello() # replace this with do_n(print_hello, 10)
 
-
+do_n(print_hello, 10)
 
 if __name__ == "__main__":
     main()

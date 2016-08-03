@@ -20,6 +20,20 @@
 ################################################################################
 # Write your functions below:
 # Body
+def check_fermat(a, b, c, n):
+	first_number = input("please enter a number for a: ")
+	a = int(first_number)
+	second_number = input("please enter a number for b: ")
+	b = int(second_number)
+	third_number = input("please enter a number for c: ")
+	c = int(third_number)
+	n_number = input("please enter a number for n: ")
+	n = int(n_number)
+	if n >= 2 and (a**n + b**n == c**n):
+		print('Holy smokes, Fermat was wrong!')
+	else:
+		print("No, that doesn't work.")
+
 
 
 
@@ -34,12 +48,14 @@
 def main():
     """Call your function within this function.
     When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
+    check_fermat_ints()
     and two functions defined in the body:
     check_fermat_ints()
     check_fermat()
     """
     print("Hello World!")
+
+check_fermat(3, 4, 5, 2)
 
 
 
